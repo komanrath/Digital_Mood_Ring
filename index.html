@@ -15,6 +15,8 @@
     <p>You <em>think</em> you know what you're feeling; we <em>know</em> we know what you're feeling.</p>
     <p>If you want to know with certainty, too, then fill out the below questions: </p>
 
+    <br><br>
+
     <label for="Question1">What's your favorite color?</label>
     <select id="Question1">
         <option value="">Don't be shy</option>
@@ -54,8 +56,32 @@
     </select>
 
     <br><br>
+    <br><br>
 
-    <button id="Mood" type="submit" value="This is your mood">
+    <button id="moodButton" type="button" onclick="computeMood()">This is your mood</button>
+
+    <br><br>
+    <br><br>
+
+    <p id="moodResult"></p>
+
+    <script>
+        const Question1 = document.getElementById("Question1");
+        const Question2 = document.getElementById("Question2");
+        const Question3 = document.getElementById("Question3");
+        const Question4 = document.getElementById("Question4");
+        const moodButton = document.getElementById("moodButton");
+        const moodResult = document.getElementById("moodResult");
+
+        function computeMood() {
+            if (Question1.value === "Green" && Question2.value === "Spring" && Question3.value === "Forest" && Question4.value === "Tea") {
+                moodResult.textContent = "Surrounded by the lushness of nature awakening, a sense of tranquility envelops you, a perfect backdrop for a calm and soothing moment.";
+            }
+        }
+
+
+    </script>
+
 
 </body>
 </html>
