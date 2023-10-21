@@ -61,7 +61,6 @@
     <button id="moodButton" type="button" onclick="computeMood()">This is your mood</button>
 
     <br><br>
-    <br><br>
 
     <p id="moodResult"></p>
 
@@ -74,9 +73,24 @@
         const moodResult = document.getElementById("moodResult");
 
         function computeMood() {
-            if (Question1.value === "Green" && Question2.value === "Spring" && Question3.value === "Forest" && Question4.value === "Tea") {
-                moodResult.textContent = "Surrounded by the lushness of nature awakening, a sense of tranquility envelops you, a perfect backdrop for a calm and soothing moment.";
-            }
+            if (Question1.value === "Green" && Question2.value === "Spring" && Question3.value === "Sea" && Question4.value === "Coffee") {
+                moodResult.textContent = "You are in a calm and content mood, possibly enjoying a serene moment of relaxation and reflection.";
+            } else if (Question1.value === "Blue" && Question2.value === "Spring" && Question3.value === "Sea" && Question4.value === "Coffee") {
+                moodResult.textContent = "You are in a mood of quiet contemplation and contentment, with a touch of optimism.";
+            } else if (Question1.value === "Red" && Question2.value === "Spring" && Question3.value === "Sea" && Question4.value === "Coffee") {
+                moodResult.textContent = "You are in a mood that is enthusiastic, positive, and possibly ready to seize the day.";
+            } else if (Question1.value === "Black" && Question2.value === "Spring" && Question3.value === "Sea" && Question4.value === "Coffee") {
+                moodResult.textContent = "Your mood is a mix of introspection, renewal, and relaxation.";
+            } else if (Question1.value === "Green" && Question2.value === "Summer" && Question3.value === "Sea" && Question4.value === "Coffee") {
+                moodResult.textContent = "You are content, relaxed, and enjoying the simple pleasures of life.";
+            } else if (Question1.value === "Green" && Question2.value === "Fall" && Question3.value === "Sea" && Question4.value === "Coffee") {
+                moodResult.textContent = "You are in a contemplative mood, possibly marked by a sense of nostalgia for past experiences or memories.";
+            } else if (Question1.value === "Green" && Question2.value === "Winter" && Question3.value === "Sea" && Question4.value === "Coffee") {
+                moodResult.textContent = "You are contemplative and seeking comfort.";
+            } else if (Question1.value === "Green" && Question2.value === "Spring" && Question3.value === "Forest" && Question4.value === "Coffee") {
+                moodResult.textContent = "Your mood is vibrant, positive, and at peace. You are feeling rejuvenated by the beauty of the natural world.";
+            } 
+            
         }
 
 
