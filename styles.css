@@ -24,6 +24,15 @@ label, select {
     color: rgb(97, 96, 97);
 }
 
+button {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.2vw;
+    color:rgb(207, 118, 191);
+    background-color:rgb(255 255 255);
+    border-radius: 1vh;
+    border-color:rgb(207, 118, 191);
+}
+
 .italicize {
     font-style: italic;
 }
