@@ -6,7 +6,7 @@ h1 {
     margin: 1vh 1vw;
     padding: 0.5vh 0.5vw;
     font-family: 'Bebas Neue', sans-serif;
-    font-size: 10vw;
+    font-size: clamp(5rem, -1.0000rem + 26.6667vw, 13rem);
     color:rgb(207, 118, 191);
     /* color:rgb(231, 171, 220); */
     /* -webkit-text-stroke: 0.01rem rgb(161, 10, 10); */
@@ -14,19 +14,19 @@ h1 {
 
 p {
     font-family: 'Oswald', sans-serif;
-    font-size: 1.5vw;
+    font-size: clamp(1rem, 0.6250rem + 1.6667vw, 1.5rem);
     color: rgb(97, 96, 97);
 }
 
 label, select {
     font-family: 'Oswald', sans-serif;
-    font-size: 1.2vw;
+    font-size: clamp(0.9rem, 0.6750rem + 1.0000vw, 1.2rem);
     color: rgb(97, 96, 97);
 }
 
 button {
     font-family: 'Oswald', sans-serif;
-    font-size: 1.2vw;
+    font-size: clamp(0.9rem, 0.6750rem + 1.0000vw, 1.2rem);
     color:rgb(207, 118, 191);
     background-color:rgb(255 255 255);
     border-radius: 1vh;
@@ -35,7 +35,7 @@ button {
 
 #moodResult {
     font-family: 'Oswald', sans-serif;
-    font-size: 1.5vw;
+    font-size: clamp(1rem, 0.6250rem + 1.6667vw, 1.5rem);
     color:rgb(207, 118, 191)
 }
 
